@@ -1,0 +1,59 @@
+/*好用基礎設定*/
+
+/*可以設定全局, 一開始就用border box的設定, 會比較好設計 */
+* { 
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+/*常用置中設定*/
+.container{
+	width : 1000px;
+	margin: 0 auto;
+}
+
+/*常用position設定*/
+.position{
+	position: static;
+	position: relative;
+	position: fixed;
+	position: absolute;
+}
+
+/*用在float之後的DIV*/
+.clear {
+    clear: both;
+}
+/*
+<div class="float">...</div>
+<div class="clear">...</div>
+*/
+
+
+/*使DIV容器大小配合超出DIV的元素(img)*/
+.clearfix {
+    overflow: auto;
+}
+
+/*
+inline-block可以替代float+clear
+但也有它不好用的地方,見example-03
+*/
+.inline-block{
+	display: inline-block;
+	height: 100px;
+	width: 100px;
+	margin: 1px;
+}
+
+/*設置垂直置中的方法*/
+.vertical-container {
+  height: 300px;
+  display: -webkit-flex;
+  display:         flex;
+  -webkit-align-items: center;
+          align-items: center;
+  -webkit-justify-content: center;
+          justify-content: center;
+}

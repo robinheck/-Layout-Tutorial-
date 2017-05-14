@@ -1,35 +1,28 @@
+/*這個案例是做一個常見的表頭, 有Logo, 有nav*/
 .container{
 	width:700px;
 	background-color: #aaa;
-	margin: 0 auto;/*margin左右auto會讓container置中*/
-
-
+	margin: 0 auto;
 }
 #header{
 	background-color: #111;
-
 }
 nav{
 	background-color: #eea;		
 	float: right;
 	margin-top: 10px;
-
 }
 nav li{
 	float:left;
-	
 	/*nav li如果用float right, nav的項目會從右到左,
 	所以要用上一層的nav靠右,li靠左,這樣的組合*/
 }
 li a{
 	padding: 0 10px;
-
 }
 #logo{
 	/*background-color: #aee;*/
 	float: left;
-	//height: 100px;
-	
 }
 .clearfix{
 	clear:both;
@@ -42,3 +35,10 @@ ul{
 	/*其他的padding預設為0*/
 	list-style-type: none;
 }
+
+/*
+這個案例做完, 有一些不合現實的缺陷
+Logo的大小不易調整, nav button的大小不合
+nav移上去希望它變色,
+垂直置中的問題比較難解決, 完整了解CSS後再來補完
+*/

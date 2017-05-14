@@ -7,11 +7,19 @@
 .work{
 	background-color: #aaa;
 	margin-bottom: 10px;
-	width:48%;
 	float: left;
+	width:48%;
 	margin-left: 1%;
 	margin-right: 1%;
 }
 .clearfix{
 	clear :both;
 }
+/*
+這個例子是講產生兩個並排欄位的方法
+預設值是display:block, block會佔一整個橫排,
+改用float, 容器就只會佔它的寬度, 
+float-left是向左補上, float-right是向右補上
+float有副作用, 會使上一層容器的高度變成0,
+所以最後要加一個clearfix去處理它
+*/

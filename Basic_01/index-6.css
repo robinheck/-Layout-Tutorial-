@@ -1,0 +1,35 @@
+.work{
+	position: relative;
+	width:250px;
+	background-color: #aaa
+}
+
+img{
+	width:100%;
+	height: auto;
+	display: block;
+}
+.info{
+	background-color: rgba(10,10,10,0.3);
+	/*rgba,最後一個是透明度*/
+	position: absolute;
+	top: -0px;
+	left: -0px;
+	/*relative意思是以自己本身原本的位置作基準來移動*/
+	/*absolute的基準會往上層找,當上層有position設定不是static的(預設值), 以該層位置為基準, 如果都是static, 則以最外層為基準*/
+	/*所以我們去設定.work為relative*/
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	padding-top: 30%;
+	/*padding-top使它在垂直方向置中, 但下方會被推出來, 所以再設定一個box-sizing*/
+	/*box-sizing: content-box;*/
+	box-sizing: border-box;
+	/*box-sizing預設是content-box, 意思是當你設定寬100, 是指內容100, 不包含padding&border,*/
+	/*而將它改為border-box, 意思是border外圍是100, 內容寬度則動態調整, 所以我們設定border是上一層的100%, 就會完全貼合上一層的容器*/
+	opacity: 0;
+}
+
+.info:hover{
+	opacity: 1;
+}
