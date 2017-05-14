@@ -1,0 +1,29 @@
+img{
+	width:30%;
+}
+body{
+	background-color: #ccc;
+}
+.feature{
+	background-color: #fff;
+	width:300px;
+	margin: 0 auto;
+	padding : 20px;
+	text-align: center;
+}
+.feature img{
+	position: relative;
+	bottom: 50px;
+}
+
+.feature2{
+	background-color: #fff;
+	width:300px;
+	margin: 50px auto 0px auto;
+	padding : 20px;
+	text-align: center;
+}
+.feature2 img{
+	position: relative;
+	margin-top: -50px;
+}

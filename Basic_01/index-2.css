@@ -1,0 +1,17 @@
+.container{
+	margin : 0 auto;
+	padding: 10px 50px;
+	width:600px;
+	background-color:#eee
+}
+.work{
+	background-color: #aaa;
+	margin-bottom: 10px;
+	width:48%;
+	float: left;
+	margin-left: 1%;
+	margin-right: 1%;
+}
+.clearfix{
+	clear :both;
+}
