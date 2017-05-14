@@ -4,3 +4,6 @@
   width:1000px;
   background-color:#eeeeee
 }
+/*所有的方塊都由container開始
+設定margin : 0 auto, 可以產生置中效果
+設定background color可以看得更清楚*/
