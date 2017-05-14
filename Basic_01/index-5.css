@@ -1,0 +1,24 @@
+.container{
+	width: 700px;
+	margin: 0 auto; 
+}
+.work{
+	float: left;
+	padding: 0.5px;
+	width:30%;
+	box-sizing: border-box;
+}
+img{
+	display: block;
+	/*預設是inline,會在下方產生一白色區*/
+	width: 100%;
+	height: auto;
+	/*圖片要自定width&heigh,才會跟著容器走*/
+
+}
+.clearfix{
+	clear: both;
+}
+.row{
+	margin: 0 -5px
+}
